@@ -7,92 +7,140 @@
 <title>Prediction Mafia</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
 }
 
 body{
-background:#0b0b0b;
+background:#050505;
+background-image:
+linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+background-size:40px 40px;
+color:white;
 display:flex;
 justify-content:center;
-align-items:center;
-height:100vh;
-padding:15px;
+padding:20px;
 }
 
 .container{
 width:100%;
-max-width:380px;
-background:#141414;
-border:1px solid #8b5cf6;
-border-radius:20px;
+max-width:430px;
+background:#0b0b0b;
+border:1px solid #2a2a2a;
+border-radius:25px;
 padding:25px;
+margin-top:20px;
+box-shadow:0 0 40px rgba(138,43,226,.25);
 text-align:center;
-box-shadow:0 0 30px rgba(139,92,246,.35);
 }
 
 .logo{
-width:100px;
-height:100px;
+width:150px;
+height:150px;
 border-radius:50%;
 object-fit:cover;
-border:3px solid #8b5cf6;
-margin-bottom:15px;
+border:5px solid #a855f7;
+box-shadow:0 0 40px #a855f7;
+margin-bottom:20px;
 }
 
 h1{
-font-size:28px;
-color:#c084fc;
+font-size:42px;
+color:#facc15;
 margin-bottom:10px;
 }
 
-.tagline{
-font-size:14px;
-color:#d1d5db;
-line-height:1.6;
+.members{
+font-size:18px;
+color:#facc15;
 margin-bottom:20px;
 }
 
-.members{
-display:inline-block;
-background:#1f1f1f;
-padding:10px 18px;
-border-radius:10px;
-margin-bottom:20px;
-color:#22c55e;
-font-weight:bold;
+.badges{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+margin-bottom:25px;
+}
+
+.badge{
+padding:12px 18px;
+border-radius:30px;
+border:1px solid #facc15;
+color:#facc15;
+font-size:15px;
+}
+
+.stats{
+display:flex;
+gap:12px;
+margin-bottom:25px;
+}
+
+.stat{
+flex:1;
+background:#111;
+border:1px solid #222;
+border-radius:15px;
+padding:18px 10px;
+}
+
+.stat h2{
+font-size:28px;
+color:#facc15;
+margin-bottom:8px;
+}
+
+.stat p{
+color:#aaa;
+font-size:14px;
 }
 
 .join-btn{
 display:block;
-background:linear-gradient(90deg,#8b5cf6,#a855f7);
-color:white;
+width:100%;
+padding:18px;
+border-radius:18px;
 text-decoration:none;
-padding:15px;
-border-radius:12px;
-font-size:18px;
+font-size:20px;
 font-weight:bold;
-margin-top:10px;
+color:white;
+background:linear-gradient(90deg,#16a34a,#84cc16,#ef4444);
+margin-bottom:25px;
 }
 
-.join-btn:hover{
-opacity:.9;
+.features{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+}
+
+.feature{
+background:#111;
+border:1px solid #222;
+border-radius:15px;
+padding:15px 8px;
+font-size:13px;
+}
+
+.icon{
+font-size:26px;
+margin-bottom:8px;
 }
 
 .footer{
-margin-top:15px;
+margin-top:25px;
 font-size:12px;
-color:#8a8a8a;
+color:#666;
+line-height:1.6;
 }
 
-.footer a{
-color:#8a8a8a;
-text-decoration:none;
-margin:0 8px;
-}
 </style>
 
 </head>
@@ -103,22 +151,67 @@ margin:0 8px;
 
 <img src="logo.jpeg" class="logo">
 
-<h1>PREDICTION MAFIA</h1>
+<h1>Prediction Mafia</h1>
 
-<div class="members">30K+ Members</div>
+<div class="members">
+👥 30K+ Active Members
+</div>
 
-<p class="tagline">
-Join our cricket community for match analysis,
-team insights, fantasy cricket discussions and daily updates.
-</p>
+<div class="badges">
+<div class="badge">🏆 Elite Analyst</div>
+<div class="badge">⚡ Live Updates</div>
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<h2>30K+</h2>
+<p>Members</p>
+</div>
+
+<div class="stat">
+<h2>Daily</h2>
+<p>Updates</p>
+</div>
+
+<div class="stat">
+<h2>24/7</h2>
+<p>Community</p>
+</div>
+
+</div>
 
 <a href="https://telegram.me/+qprvDFpBY442ZjZl" class="join-btn">
-JOIN TELEGRAM
+📢 Join Telegram Channel
 </a>
 
+<div class="features">
+
+<div class="feature">
+<div class="icon">✅</div>
+Verified
+</div>
+
+<div class="feature">
+<div class="icon">🔒</div>
+Secure
+</div>
+
+<div class="feature">
+<div class="icon">📈</div>
+Analysis
+</div>
+
+<div class="feature">
+<div class="icon">⭐</div>
+Top Rated
+</div>
+
+</div>
+
 <div class="footer">
-<a href="#">Privacy Policy</a> |
-<a href="#">Contact</a>
+© Prediction Mafia. All Rights Reserved.<br>
+Professional Cricket Analysis & Community Updates
 </div>
 
 </div>
